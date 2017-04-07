@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>All categories</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3>all available tags</h3>
+  <ion-list>
+    <button ion-item *ngFor="let cat of categories">
+      <p>{{cat.idcategories}}</p>
+      <h2>{{cat.name}}</h2>
+    </button>
+  </ion-list>
+
+</ion-content>
