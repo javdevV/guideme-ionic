@@ -4,8 +4,7 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "typescript.tsdk": "./node_modules/typescript/lib",// added
-    "lib": [
+     "lib": [
       "dom",
       "es2015"
     ],

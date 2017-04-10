@@ -5,12 +5,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { TestPage } from '../pages/test/test';
-//import { TagsPage } from '../pages/tags/tags';
-import { AllcategoriesPage } from '../pages/allCategories/allcategories';
 import { Myprovider  } from '../providers/myprovider';
-
-
+import { Catprovider  } from '../providers/catprovider';
+import { EventTagPage } from '../pages/event-tag/event-tag';
+import { EventCategoriesPage } from '../pages/event-categories/event-categories';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,TestPage,AllcategoriesPage
+    ListPage,    EventTagPage ,EventCategoriesPage
 
   ],
   imports: [
@@ -31,16 +29,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
-    TestPage,AllcategoriesPage
-
+    ListPage,EventTagPage,EventCategoriesPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Myprovider
-
+    Myprovider,Catprovider
   ]
 })
 export class AppModule {}

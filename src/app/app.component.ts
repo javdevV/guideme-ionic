@@ -2,12 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { TestPage } from '../pages/test/test';
-import { TagsPage } from '../pages/tags/tags';
-import { AllcategoriesPage  } from '../pages/allCategories/allcategories';
+import { EventTagPage } from '../pages/event-tag/event-tag';
+import { EventCategoriesPage } from '../pages/event-categories/event-categories';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,10 +24,9 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Test', component: TestPage},
-      { title: 'Alltags', component: TagsPage},
-      { title: 'Allcategories', component: AllcategoriesPage}
-    ];
+      { title: 'Event tag', component: EventTagPage },
+      { title: 'Event Categories', component: EventCategoriesPage },
+     ];
 
   }
 
