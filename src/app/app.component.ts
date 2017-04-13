@@ -6,6 +6,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { EventTagPage } from '../pages/event-tag/event-tag';
 import { EventCategoriesPage } from '../pages/event-categories/event-categories';
+import { ProfilePage } from '../pages/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,11 +14,18 @@ import { EventCategoriesPage } from '../pages/event-categories/event-categories'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = ProfilePage;
 
   pages: Array<{title: string, component: any}>;
 
+  lat : number;
+  lan : number;
+
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+
+
+
+
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -26,6 +34,7 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'Event tag', component: EventTagPage },
       { title: 'Event Categories', component: EventCategoriesPage },
+      { title: 'profile', component: ProfilePage },
      ];
 
   }
@@ -37,6 +46,7 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+
   }
 
   openPage(page) {

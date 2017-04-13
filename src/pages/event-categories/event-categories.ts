@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {Catprovider} from '../../providers/catprovider'
+import {Categories} from "../../models/categories";
 // import {Categories} from '../../models/categories';
 /*
   Generated class for the EventCategories page.
@@ -14,6 +15,7 @@ import {Catprovider} from '../../providers/catprovider'
 })
 export class EventCategoriesPage {
   listcat : any;
+  orgcat : any ;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private myprovider:Catprovider) {
     this.myprovider.loadCategories().then(x=>{
@@ -24,6 +26,17 @@ export class EventCategoriesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventCategoriesPage');
+  }
+  search(event) {
+    let term = event.target.value;
+    if (term.trim() === '' || term.trim().length < 2) {
+      this.listcat = this.orgcat;
+    } else {
+      this.myprovider.getTagByName(term).subscribe(listcat => {
+        this.listcat = listcat;
+        console.log(this.listcat);
+      });
+    }
   }
 
 }

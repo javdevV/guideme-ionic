@@ -6,5 +6,7 @@ import {Categories} from './categories';
 export interface User{
   name: String,
   evt_tags: [Tags],
-  evt_categories: [Categories]
+  evt_categories: [Categories],
+  pos_latitude : Number,
+  pos_longitude : Number
 }

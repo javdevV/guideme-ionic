@@ -15,10 +15,20 @@
 
 
 <ion-content padding>
+  <ion-searchbar (input)="search($event)"></ion-searchbar>
+
   <ion-list>
-    <ion-item *ngFor="let cat of listcat" >
-      <p>{{cat.id}}</p>
-      <p>{{cat.name}}</p>
-    </ion-item>
+    <ion-item-sliding *ngFor="let cat of listcat" >
+      <ion-item>
+        <p>{{cat.id}}</p>
+        <p>{{cat.name}}</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="secondary"> Delete</button>
+        <button ion-button color="danger">Edit</button>
+        <!--(click)="removeItem(item)"-->
+      </ion-item-options>
+
+    </ion-item-sliding>
   </ion-list>
 </ion-content>

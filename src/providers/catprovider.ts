@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Categories} from '../models/categories';
+import {Observable} from "rxjs";
 
 /*
   Generated class for the Catprovider provider.
@@ -28,6 +29,10 @@ export class Catprovider {
           resolve(this.categories);
         });
     });
+  }
+  getTagByName(name:string):Observable<Categories[]>{
+    return this.http.get(`http://localhost:3000/api/getCatByName/${name}`)
+      .map(res => <Categories[]>res.json());
   }
 
 

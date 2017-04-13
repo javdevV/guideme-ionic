@@ -13,12 +13,22 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let tag of listtags" >
-      <p>{{tag.id}}</p>
-      <p>{{tag.title}}</p>
-    </ion-item>
+  <ion-searchbar (input)="search($event)"></ion-searchbar>
+   <ion-list>
+    <ion-item-sliding *ngFor="let tag of listtags">
+      <ion-item>
+        <!--{{tag.id}}-->
+        {{tag.title}}
+        <ion-icon   md="ios-arrow-back-outline" style="float:right"></ion-icon>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="secondary"> Delete</button>
+        <button ion-button color="danger">Edit</button>
+      </ion-item-options>
+     </ion-item-sliding>
+
+
+
   </ion-list>
 </ion-content>
