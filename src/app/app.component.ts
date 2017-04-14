@@ -7,6 +7,7 @@ import { ListPage } from '../pages/list/list';
 import { EventTagPage } from '../pages/event-tag/event-tag';
 import { EventCategoriesPage } from '../pages/event-categories/event-categories';
 import { ProfilePage } from '../pages/profile/profile';
+import { EventsPage } from '../pages/events/events';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,11 +31,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
+      // { title: 'Home', component: HomePage },
+      // { title: 'List', component: ListPage },
+      { title: 'profile', component: ProfilePage },
       { title: 'Event tag', component: EventTagPage },
       { title: 'Event Categories', component: EventCategoriesPage },
-      { title: 'profile', component: ProfilePage },
+      { title: 'Events', component: EventsPage }
      ];
 
   }

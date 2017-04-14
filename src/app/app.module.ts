@@ -7,10 +7,12 @@ import { HomePage } from '../pages/home/home';
 import { Geolocation } from '@ionic-native/geolocation';
 import { ListPage } from '../pages/list/list';
 import { Myprovider  } from '../providers/myprovider';
+import { Event  } from '../providers/event';
 import { Catprovider  } from '../providers/catprovider';
 import { EventTagPage } from '../pages/event-tag/event-tag';
 import { EventCategoriesPage } from '../pages/event-categories/event-categories';
 import { ProfilePage } from '../pages/profile/profile';
+import { EventsPage } from '../pages/events/events';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,    EventTagPage ,EventCategoriesPage,ProfilePage
+    ListPage,    EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage
 
   ],
   imports: [
@@ -31,13 +33,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,EventTagPage,EventCategoriesPage,ProfilePage
+    ListPage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Myprovider,Catprovider,Geolocation
+    Myprovider,Catprovider,Geolocation,Event
   ]
 })
 export class AppModule {}

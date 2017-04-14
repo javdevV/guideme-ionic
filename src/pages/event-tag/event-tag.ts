@@ -3,6 +3,8 @@ import {NavController, NavParams} from 'ionic-angular';
 import {Myprovider} from '../../providers/myprovider'
 import {Tags} from '../../models/tags';
 import {Geolocation} from '@ionic-native/geolocation';
+import {UsersTags} from'../../models/usersTags';
+
 declare var google;
 
 /*
@@ -18,9 +20,9 @@ declare var google;
 export class EventTagPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  originalTags: Tags[];
-  listtags: Tags[];
-
+  originalTags: any;
+  listtags: any;
+  usersTags :any;
   constructor(public navCtrl: NavController, public navParams: NavParams, private myprovider: Myprovider, public geolocation: Geolocation) {
     this.myprovider.loadTags().then(listtags => {
       this.listtags = listtags;
@@ -28,9 +30,17 @@ export class EventTagPage {
        console.log(listtags);
     })
   }
+  loadUsersTags(){
+    return this.myprovider.loadUsersTags().then(usersTags=>{
+      this.usersTags=usersTags;
+      console.log(usersTags);
+    });
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventTagPage');
+    this.loadUsersTags();
     this.loadMap();
     // var a = this;
     // setInterval(function () {
@@ -83,5 +93,12 @@ export class EventTagPage {
         console.log(this.listtags);
       });
     }
+  }
+  addTagToUser(tag){
+    this.myprovider.addTagToUser(tag);
+  }
+  deleteTagFromUser(tag){
+    console.log(tag);
+    this.myprovider.deleteTagFromUser(tag);
   }
 }
