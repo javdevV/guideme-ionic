@@ -21,7 +21,7 @@ export class Event {
       return Promise.resolve(this.events);
     }
     return new Promise(resolve => {
-      this.http.get('http://localhost:3000/api/events')
+      this.http.get('http://localhost:9000/api/events')
         .map(res => res.json())
         .subscribe(events => {
           this.events = events;

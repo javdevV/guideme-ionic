@@ -23,7 +23,8 @@
       </ion-item>
       <ion-item-options *ngFor="let ustag of usersTags">
 
-         <button  [hidden]="tag.id!==ustag.id" ion-button color="secondary" (click)="deleteTagFromUser(ustag)"> Delete</button>
+         <button  [hidden]="tag.id!==ustag.id" ion-button color="secondary" (click)="deleteTagFromUser(ustag)">
+          Delete</button>
          <button [hidden]="tag.id==ustag.id" ion-button color="danger" (click)="addTagToUser(tag)">Add</button>
         </ion-item-options>
      </ion-item-sliding>

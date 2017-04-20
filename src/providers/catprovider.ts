@@ -22,7 +22,7 @@ export class Catprovider {
       return Promise.resolve(this.categories);
     }
     return new Promise(resolve => {
-      this.http.get("http://localhost:3000/api/categories")
+      this.http.get("http://localhost:9000/api/categories")
         .map(res => <Categories[]>res.json())
         .subscribe(categories => {
           this.categories = categories;
@@ -31,7 +31,7 @@ export class Catprovider {
     });
   }
   getTagByName(name:string):Observable<Categories[]>{
-    return this.http.get(`http://localhost:3000/api/getCatByName/${name}`)
+    return this.http.get(`http://localhost:9000/api/getCatByName/${name}`)
       .map(res => <Categories[]>res.json());
   }
 
