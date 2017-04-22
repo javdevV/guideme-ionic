@@ -17,13 +17,12 @@ export class Myprovider {
     console.log('Hello Myprovider Provider');
   }
   loadUsersTags() {
-    // return this.http.get(`http://localhost:9000/api/loadUsersTAgs`)
+    // return this.http.get(`http://localhost:3000/api/loadUsersTAgs`)
     //   .map(res => <UsersTags[]>res.json().evt_tag);
     if (this.usersTags) {
       return Promise.resolve(this.usersTags);
     }
     return new Promise(resolve => {
-      this.http.get('http://localhost:9000/api/loadUsersTAgs')
       this.http.get('http://localhost:9000/api/loadUsersTAgs')
         .map(res => <UsersTags[]>res.json().evt_tags)
         .subscribe(UsersTags => {
@@ -32,7 +31,8 @@ export class Myprovider {
         });
     });
   }
- 
+
+
   loadTags() {
     if (this.tags) {
       return Promise.resolve(this.tags);
@@ -70,8 +70,7 @@ export class Myprovider {
   }
   deleteTagFromUser(tag){
     let headers = new Headers ();
-    headers.append('content-Type','application/json');
-    // let options ={p:JSON.stringify(tag),headers:headers};
+     // let options ={p:JSON.stringify(tag),headers:headers};
     this.http.delete(`http://localhost:9000/api/deleteTagfromUser`,tag)
       .subscribe(res => {
         console.log(res.json());

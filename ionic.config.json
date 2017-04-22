@@ -1,6 +1,14 @@
 {
-  "name": "guideme-ionic",
+  "name": "cloudo",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies": [
+    {
+        "path": "/api",
+        "proxyUrl": "https://oussemalaamiri.cloudant.com/museums/_all_docs"
+    }
+]
 }
+
+

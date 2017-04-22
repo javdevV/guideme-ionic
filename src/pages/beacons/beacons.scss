@@ -1,0 +1,50 @@
+.ios, .md {
+
+	page-home {
+
+		.scroll-content {
+		  background-color: #ecf0f1;
+		  display: flex !important;
+		  justify-content: center;
+		}
+
+		ion-list {
+		  width: 90%;
+		}
+
+		ion-item-sliding {
+		  margin-top: 20px;
+		  border-radius: 20px;
+		}
+
+		ion-item {
+		  border: none !important;
+		  font-weight: bold !important;
+		}
+
+	}
+
+}
+
+
+
+.home {
+ 
+  #card-stack {
+    width: 90%;
+    height: 200px;
+    background: #047915;
+    border: 10px solid #4cb338;
+    margin: 100px auto 0;
+    position: relative;
+  }
+ 
+  #card-stack ion-card {
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+    top: 3%;
+    height: 90%;
+  }
+ 
+}

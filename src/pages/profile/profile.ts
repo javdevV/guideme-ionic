@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {EventTagPage} from '../event-tag/event-tag';
 import {EventCategoriesPage} from '../event-categories/event-categories';
+import {EventsPage} from '../events/events';
 /*
   Generated class for the Profile page.
 
@@ -25,6 +26,9 @@ export class ProfilePage {
   }
   goToCat() {
     this.navCtrl.push(EventCategoriesPage);
+  }
+  goToEvent() {
+    this.navCtrl.push(EventsPage);
   }
 
 }

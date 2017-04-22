@@ -1,1 +1,1 @@
-"# guideme-ionic" 
+"# ionic-guideme" 

@@ -20,15 +20,15 @@
   <ion-list>
     <ion-item-sliding *ngFor="let cat of listcat" >
       <ion-item>
-        <p>{{cat.id}}</p>
-        <p>{{cat.name}}</p>
+         <ion-icon md="ios-arrow-back-outline" style="float:right"></ion-icon>
+         <p>{{cat.name}}</p>
       </ion-item>
-      <ion-item-options>
-        <button ion-button color="secondary"> Delete</button>
-        <button ion-button color="danger">Edit</button>
-        <!--(click)="removeItem(item)"-->
+      <ion-item-options *ngFor="let uc of p">
+        <!-- <button [hidden]="uc.idcategories!=cat.idcategories" ion-button color="danger">Delete</button>
+        <button [hidden]="uc.idcategories==cat.idcategories" ion-button color="secondary" (click)="addCatToUser(cat)">Add</button> -->
+        <button *ngIf="uc.idcategories==cat.idcategories" ion-button color="danger" (click)="deleteCatFromUser(cat)">Delete</button>
+        <button *ngIf="uc.idcategories!=cat.idcategories||uc=='-1'" ion-button color="secondary" (click)="addCatToUser(cat)">Add</button>
       </ion-item-options>
-
     </ion-item-sliding>
   </ion-list>
 </ion-content>

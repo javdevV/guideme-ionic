@@ -98,7 +98,6 @@ export class EventTagPage {
     this.myprovider.addTagToUser(tag);
   }
   deleteTagFromUser(tag){
-    console.log(tag);
     this.myprovider.deleteTagFromUser(tag);
   }
 }

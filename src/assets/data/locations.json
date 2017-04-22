@@ -1,0 +1,395 @@
+{
+  "locations": [
+
+    {
+      "title": "Musée National de L'Orangerie des Tuileries",
+      "latitude": 48.863788,
+      "longitude": 2.322672,
+
+     "ouverture": "Ouvert du mercredi au lundi de 9h à 18h"
+   },
+    {
+      "title": "Musée de l'Homme (Muséum National d'Histoire Naturelle)",
+      "latitude": 48.861166,
+      "longitude": 2.286826,
+   
+     "ouverture": "Ouvert du lundi au Samedi de 9h à 18h"
+   },
+    {
+      "title": "Musée Zadkine",
+      "latitude": 48.843177,
+      "longitude": 2.333969,
+
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Etablissement Public du Musée d'Orsay",
+      "latitude": 48.859754,
+      "longitude": 2.325917,
+   
+     "ouverture":"Ouvert le mardi, mercredi, vendredi au dimanche de 9h30 à 18h, le jeudi de 9h30 à 21h45"
+      },
+    {
+      "title": "Musée du Général Leclerc de Hauteclocque et de la Libération de Paris - Musée Jean Moulin",
+      "latitude": 48.840346,
+      "longitude": 2.319415,
+
+     "ouverture":"Ouvert du mardi au dimanche de 10h à 18h" 
+   },
+    {
+      "title": "Musée d'Ennery",
+      "latitude": 48.871887,
+      "longitude": 2.282381,
+
+     "ouverture":"Ouvert les jeudis, samedis et dimanches après-midi uniquement en visite conférence, sur réservation" 
+   },
+    {
+      "title": "Musée National Picasso",
+      "latitude": 48.8597,
+      "longitude": 2.362644,
+     "ouverture":" Ouvert de 9h30 à 18h d'avril à septembre et de 9h30 à 17h30 d'octobre à mars"
+   },
+    {
+      "title": "Musée Cognacq-Jay, Musée du XVIIIe siècle de la ville de Paris",
+      "latitude": 48.858257,
+      "longitude": 2.361524,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Galerie de Minéralogie et de Géologie (Muséum d'Histoire Naturelle)",
+      "latitude": 48.841491,
+      "longitude": 2.355989,
+     "ouverture": "Ouvert du mercredi au lundi de 10h à 17h"
+   },
+    {
+      "title": "Musée Nissim de Camondo (Les Arts Décoratifs)",
+      "latitude": 48.878849,
+      "longitude": 2.312855,
+     "ouverture":"Ouvert du mercredi au dimanche de 10h à 17h30"
+      },
+    {
+      "title": "Musée de Montmartre",
+      "latitude": 48.887709,
+      "longitude": 2.340577,
+     "ouverture": "Ouvert de 10h à 18h toute l'année"
+   },
+    {
+      "title": "Musée d'Art Moderne de la ville de Paris",
+      "latitude": 48.877878,
+      "longitude": 2.334383,
+     "ouverture": "Ouvert du mardi au dimanche de 10 à 18 h. Nocturne le mercredi jusqu'a 22h pour les expositions temporaires"
+   },
+    {
+      "title": "Musée National Gustave Moreau",
+      "latitude": 48.86434209999999,
+      "longitude": 2.297820799999954,
+     "ouverture": "Ouvert du mercredi au lundi de 10h à 12h45 et de 14h à 17h15"
+   },
+    {
+      "title": "Musée de la Vie Romantique",
+      "latitude": 48.880899,
+      "longitude": 2.333278,
+     "ouverture":"Ouvert du mardi au dimanche de 10h à 18h"
+      },
+    {
+      "title": "Musées Arts Décoratifs Mode et du Textile",
+      "latitude": 48.8633218,
+      "longitude": 2.3333,
+     "ouverture": "Ouvert du mardi au vendredi de 11h à 18h, samedi et dimanche de 10h à 18h, nocturnele jeudi jusqu'à 21h"
+   },
+    {
+      "title": "Musée National de la Légion d'Honneur et des Ordres de Chevalerie",
+      "latitude": 48.860433,
+      "longitude": 2.324889,
+     "ouverture": "Ouvert du mercredi au dimanche de 13h à 18h. Accessible le mardi pour les groupes sur réservation"
+   },
+    {
+      "title": "Musée National Eugène Delacroix",
+      "latitude": 48.854437,
+      "longitude": 2.335771,
+     "ouverture": "Ouvert du mercredi au lundi de 9h30 à 17h"
+   },
+    {
+      "title": "Les Catacombes",
+      "latitude": 48.833784,
+      "longitude": 2.331927,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 17h"
+   },
+    {
+      "title": "Etablissement Public du Musée des Arts Asiatiques Guimet",
+      "latitude": 48.865008,
+      "longitude": 2.293674,
+     "ouverture":"Ouvert les jeudis, samedis et dimanches après-midi uniquement en visite conférence, sur réservation"
+      },
+    {
+      "title": "M.U.C.E.M. - Musée des ATP",
+      "latitude": 48.877026,
+      "longitude": 2.267791,
+     "ouverture": "Ouvert en fonction des expositions temporaires"
+   },
+    {
+      "title": "Musée Bouchard",
+      "latitude": 48.853611,
+      "longitude": 2.265988,
+     "ouverture": "Ouvert en fonction des expositions temporaires"
+   },
+    {
+      "title": "Grande Galerie de l'Evolution (Muséum National d'Histoire Naturelle)",
+      "latitude": 48.841491,
+      "longitude": 2.355989,
+     "ouverture": "Ouvert du mercredi au lundi de 10h à 18h"
+      },
+    {
+      "title": "Galerie de Botanique (Muséum National National d'Histoire Naturelle)",
+      "latitude": 48.8447245,
+      "longitude": 2.3591507,
+     "ouverture": "Ouvert du Jeudi au lundi de 9h à 18h"},
+    {
+      "title": "Musée d'Art et d'Histoire du Judaïsme",
+      "latitude": 48.86095,
+      "longitude": 2.347221,
+     "ouverture":"Ouvert du lundi au vendredi de 11h à 18h et le dimanche de 10h à 18h. Nocturne jusqu'à 21h lors des expositions temporaires"
+      },
+    {
+      "title": "Crypte Archéologique du Parvis Notre-Dame",
+      "latitude": 48.853542,
+      "longitude": 2.347221,
+     "ouverture": "Ouvert de 10h à 18h"
+      },
+    {
+      "title": "Établissement Public de la Porte Dorée - Musée de l'Histoire de l'Immigration",
+      "latitude": 48.835301,
+      "longitude": 2.4094089999999824,
+     "ouverture":  "Ouvert du mardi au vendredi de 10h à 17h30 et le samedi et dimanche de 10h à 19h"
+   },
+  
+    {
+      "title": "Musée de la Chasse et de la Nature",
+      "latitude": 48.861337,
+      "longitude": 2.358433,
+     "ouverture":"Ouvert du mardi au dimanche de 11h à 18h et le mercredi de 11h à 21h30"
+      },
+    {
+      "title": "Musée de la Publicité (Les Arts Décoratifs)",
+      "latitude": 48.863218,
+      "longitude": 2.3333,
+     "ouverture":"Ouvert du lundi au Samedi de 11h à 14h et le mercredi de 11h à 21h30"
+      },
+    {
+      "title": "Musée National du Sport",
+      "latitude": 48.829117,
+      "longitude": 2.37785,
+     "ouverture": "Ouvert du mardi au vendredi de 10h à 18h et le samedi et premier dimanche du mois et jours fériés de 14h à 18h"
+   },
+    {
+      "title": "Musée Hébert",
+      "latitude": 48.847429,
+      "longitude": 2.322709,
+     "ouverture": "Ouvert du mardi au vendredi de 10h à 18h"
+   },
+    {
+      "title": "Etablissement public de la Porte Dorée - Aquarium Tropical",
+      "latitude": 48.8353012,
+      "longitude": 2.4094089000000167,
+     "ouverture": "Ouvert tous les jours du mardi au vendredi de 10h à 17h15, le week-end de 10h à 19h, y compris certains jours fériés"
+   },
+    {
+      "title": "Maison de Balzac",
+      "latitude": 48.85538,
+      "longitude": 2.280755,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Musée Cognacq-Jay, Musée du XVIIIe siècle de la ville de Paris",
+      "latitude": 48.858257,
+      "longitude": 2.361524,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Galerie de Minéralogie et de Géologie (Muséum d'Histoire Naturelle)",
+      "latitude": 48.841491,
+      "longitude": 2.355989,
+     "ouverture": "Ouvert du mercredi au lundi de 10h à 17h"
+   },
+    {
+      "title": "Crypte Archéologique du Parvis Notre-Dame",
+      "latitude": 48.853542,
+      "longitude": 2.347221,
+     "ouverture":"Ouvert de 10h à 18h"
+      },
+    {
+      "title": "Musées Arts Décoratifs Mode et du Textile",
+      "latitude": 48.863218,
+      "longitude": 2.3333,
+     "ouverture":"Ouvert du mardi au vendredi de 11h à 18h, samedi et dimanche de 10h à 18h, nocturnele jeudi jusqu'à 21h"
+      },
+    {
+      "title": "Les Catacombes",
+      "latitude": 48.833784,
+      "longitude": 2.331927,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 17h"
+   },
+    {
+      "title": "Petit Palais, Musée des Beaux-Arts de la ville de Paris",
+      "latitude": 48.866088,
+      "longitude": 2.313814,
+     "ouverture": "Ouvert tous les jours de 10h à 18h"
+   },
+    {
+      "title": "Musée de la Vie Romantique",
+      "latitude": 48.85538,
+      "longitude": 2.333278,
+     "ouverture":"Ouvert du mardi au dimanche de 10h à 18h"
+      },
+    {
+      "title": "Musée National Auguste Rodin",
+      "latitude": 48.855868,
+      "longitude": 2.31598,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Musée d'Ennery",
+      "latitude": 48.871887,
+      "longitude": 2.282381,
+     "ouverture": "Ouvert les jeudis, samedis et dimanches après-midi uniquement en visite conférence, sur réservation"
+   },
+    {
+      "title": "Musée Carnavalet-Histoire de Paris",
+      "latitude": 48.857573,
+      "longitude": 2.363359,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Musée de l'Armée",
+      "latitude": 48.858219,
+      "longitude": 2.312885,
+     "ouverture":"Ouvert d'avril à septembre de 10h à 18h (18h30 le dimanche), d'octobre à mars de 10h à 17h (17h30 le dimanche). Du 15 juin au 15 septembre l'église du dôme reste ouverte jusqu'à 19h"
+      },
+    {
+      "title": "Musée National de la Marine",
+      "latitude": 48.862578,
+      "longitude": 2.287377,
+     "ouverture":"Ouvert lundi, mercredi au vendredi de 11h à 18h, samedi-dimanche de 11h à 19h"
+      },
+    {
+      "title": "Musées des Arts Décoratifs",
+      "latitude": 48.863218,
+      "longitude": 2.3333,
+     "ouverture": "Mardi au vendredi de 11h à 18h - samedi et dimanche de 10h à 18h"
+   },
+    {
+      "title": "Musée National du Moyen Age-Thermes de Cluny",
+      "latitude": 48.850325,
+      "longitude": 2.34391,
+     "ouverture": "Ouvert du mercredi au lundi de 9h15 à 17h45"
+   },
+    {
+      "title": "Galerie d’entomologie (Muséum national d'histoire naturelle)",
+      "latitude": 48.843835,
+      "longitude": 2.355201,
+     "ouverture": "Ouvert du mercredi au lundi de 9h15 à 17h45"
+      },
+    {
+      "title": "Musée de la Musique",
+      "latitude": 48.889306,
+      "longitude": 2.393807,
+     "ouverture":"Ouvert du Jeudi au Samedi de 9h15 à 17h45" 
+   },
+    {
+      "title": "Musée de la Franc-Maçonnerie",
+      "latitude": 48.874952,
+      "longitude": 2.343057,
+     "ouverture":"Ouvert du Lundi au vendredi de 10h à 12h30 et de  14h à 18h, le samedi de 10h à 13h et de 14h à 19h"
+      },
+    {
+      "title": "Musée Cernuschi, Musée des Arts de l'Asie de la ville de Paris",
+      "latitude": 48.879693,
+      "longitude": 2.312194,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Musée du Louvre",
+      "latitude": 48.858905,
+      "longitude": 2.340991,
+     "ouverture":"Ouvert du mardi au dimanche de 10h à 18h"
+      },
+    {
+      "title": "Musée Bourdelle",
+    "latitude": 48.843017,
+      "longitude": 2.31883,
+     "ouverture":"Ouvert du mardi au dimanche de 10h à 18h" 
+   },
+    {
+      "title": "Musée des Monuments Français",
+      "latitude": 48.862923,
+      "longitude": 2.287896,
+     "ouverture": "Ouvert lundi, mercredi, vendredi au dimanche de 11h à 19h, le jeudi de 11h à 21h"
+   },
+    {
+      "title": "Maison de Victor Hugo",
+      "latitude": 48.8547972,
+      "longitude": 2.366162000000031,
+     "ouverture":"Ouvert de 10h à 18h du mardi au dimanche"
+      },
+    {
+      "title": "Mémorial du Maréchal Leclerc de Hauteclocque et de la Libération de Paris - Musée Jean Moulin",
+      "latitude": 48.858219,
+      "longitude": 2.312885,
+     "ouverture": "Ouvert du mardi au dimanche de 10h à 18h"
+   },
+    {
+      "title": "Musée Lénine",
+      "latitude": 48.826334,
+      "longitude": 2.330549,
+     "ouverture": "Entrée sur rendez vous uniquement"
+   },
+    {
+      "title": "Institut du Monde Arabe",
+      "latitude": 48.849251,
+      "longitude": 2.356021,
+     "ouverture": "Ouvert du mardi au jeudi de 10h à 18h, le vendredi de 10h à 21h30, week-end et jours fériés de 10h à 19h"
+   },
+    {
+      "title": "Musée de l'Assistance Publique - Hôpitaux de Paris",
+      "latitude": 48.856822,
+      "longitude": 2.350350,
+     "ouverture":"Ouvert du mardi au jeudi et le 1er dimanche de chaque mois  de 10h à 18h"
+      },
+    {
+      "title": "Musée Jean-Jacques Henner",
+       "latitude": 48.883045,
+      "longitude": 2.307689,
+     "ouverture": "Ouvert de 11h-18h du mercredi au lundi. Nocturne jusquà 21h le premier jeudi du mois"
+   },
+    {
+      "title": "Musée d'Art Moderne de la ville de Paris",
+      "latitude": 48.864833,
+      "longitude": 2.29738,
+     "ouverture": "Ouvert du mardi au dimanche de 10 à 18 h. Nocturne le mercredi jusqu'a 22h pour les expositions temporaires"
+   },
+    {
+      "title": "Musée Carnavalet-Histoire de Paris",
+        "latitude": 48.85699,
+      "longitude": 2.362856,
+     "ouverture": "Ouvert chaque jour de 9h à 17h sauf les dimanches"
+   },
+    {
+      "title": "Galerie dentomologie (Muséum national d'histoire naturelle)",
+      "latitude": 48.843835,
+      "longitude": 2.355201,
+     "ouverture": "Ouvert chaque jour de 9h à 17h sauf les dimanches"
+   },
+ {
+      "title": "Musée National du Sport",
+      "latitude": 48.829117,
+      "longitude": 2.37785,
+     "ouverture": "Ouvert du mardi au vendredi de 10h à 18h et le samedi et premier dimanche du mois et jours fériés de 14h à 18h"
+      },
+  {
+      "title": "Musée National Picasso",
+      "latitude": 48.8597,
+      "longitude": 2.362644,
+      "ouverture":"Ouvert de 9h30 à 18h d'avril à septembre et de 9h30 à 17h30 d'octobre à mars"
+    } 
+  ]
+}

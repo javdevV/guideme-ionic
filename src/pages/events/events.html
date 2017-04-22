@@ -16,17 +16,26 @@
 
 
 <ion-content padding>
-
-
-     <ion-list>
-      <ion-item-sliding *ngFor="let evt of listevent" >
-        <ion-item>
-          <p>{{evt.title}}</p>
-          <p>{{evt.leadText}}</p><br />
-          <!--{{evt.components.data.block}}-->
-        </ion-item>
-
-      </ion-item-sliding>
-    </ion-list>
+<ion-list>
+    <ion-card *ngFor="let evt of listevent">
+  <img src="{{evt.image.url}}" width="30%px" height="30%" />
+  <ion-card-content>
+    <ion-card-title>
+      evt.title
+      </ion-card-title>
+    <p>
+      T{{evt.leadText}}
+    </p>
+    <p>{{evt.place.address}},{{evt.place.zipcode}} </p>
+  </ion-card-content>
+      <!-- <button ion-button  item-right>View</button> -->
+      
+      <span *ngFor="let item of evt.tags">
+            <button style="height: 20%"><ion-icon name="ion-pricetags" primary item-left> </ion-icon>{{item}}</button>
+      </span>
+      
+        
+</ion-card>
+</ion-list>
 
 </ion-content>

@@ -1,0 +1,68 @@
+<ion-header no-border>
+  <ion-navbar color="secondary">
+    <ion-title>
+     GuideMe
+    </ion-title>
+    <!-- <ion-buttons end>
+      <button ion-button icon-only (click)="createTodo()"><ion-icon name="cloud-upload"></ion-icon></button>
+       <button ion-button icon-only (click)="chat()"><ion-icon name="cloud-upload"></ion-icon></button>
+        <button ion-button icon-only (click)="map()"><ion-icon name="cloud-upload"></ion-icon></button>
+        
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+ 
+
+
+
+
+   
+    
+  <ion-list no-lines>
+
+  <img src="https://www.spreadshirt.fr/image-server/v1/designs/15541607,width=178,height=178/ici-c-est-paris.png" style="margin-left: 150px;margin-top:180px">
+<!-- <button primary (click)="schedule()">Schedule</button> -->
+
+       <!-- <ion-item-sliding  *ngFor="let todo of todos">
+
+        <ion-item>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGRrlxa1rtUoVa_mJ490N02LwTEkftqLRbEg6M9nk3_IE4lARkfw" style="width:35px;height:35px">
+          {{todo.info.nom_du_musee}} 
+
+        </ion-item>
+        
+
+        <ion-item-options>
+         
+          <button ion-button icon-only color="primary" (click)="deleteTodo(todo)">
+            <ion-icon name="checkmark"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding> -->
+<ion-item *ngFor="let beacon of beacons">
+<!-- <ion-grid>
+<ion-row>
+<ion-col>Major</ion-col>
+<ion-col>{{beacon.major}}</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>Minor</ion-col>
+<ion-col>{{beacon.minor}}</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>RSSI</ion-col>
+<ion-col>{{beacon.rssi}}</ion-col>
+</ion-row>
+
+</ion-grid> -->
+
+<div *ngIf="beacon.major=='1'">{{schedule(todos[num].info.nom_du_musee,todos[num].info.adr)}}</div>
+<div *ngIf="beacon.major=='2'">{{schedule(todos[num].info.nom_du_musee,todos[num].info.adr)}}</div>
+
+</ion-item>
+
+  </ion-list> 
+
+</ion-content>

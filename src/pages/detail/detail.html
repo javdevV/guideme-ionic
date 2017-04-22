@@ -1,0 +1,47 @@
+
+<ion-header>
+
+    <ion-navbar color="dark">
+        <ion-title>Detail</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <ion-list>
+ 
+    
+
+<!-- https://ionicframework.com/docs/ionicons/ Site emta3 les icones -->
+     <ion-item>
+        
+      <ion-icon name="ios-home"></ion-icon> <strong>Nom Du Musée:</strong>
+          {{title}}
+           </ion-item>
+     <ion-item>
+              <ion-icon name="ios-map"></ion-icon>  <strong>Latitude: </strong> 
+         {{latitude}}
+           </ion-item>
+
+                    <ion-item>   
+    
+         <ion-icon name="ios-map"></ion-icon>   <strong>Longitude:</strong> 
+        {{longitude}}
+      
+      </ion-item>
+
+                     <ion-item>   
+    
+         <ion-icon name="ios-time"></ion-icon>   <strong>Heure d'Ouverture:</strong> 
+        {{ouverture}}
+      
+      </ion-item>
+        
+         
+
+
+    </ion-list>
+
+</ion-content>

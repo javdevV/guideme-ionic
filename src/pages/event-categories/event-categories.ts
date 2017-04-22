@@ -16,27 +16,44 @@ import {Categories} from "../../models/categories";
 export class EventCategoriesPage {
   listcat : any;
   orgcat : any ;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams,private myprovider:Catprovider) {
-    this.myprovider.loadCategories().then(x=>{
+  uscat : any ;
+  p:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams,private _service:Catprovider) {
+    this._service.loadCategories().then(x=>{
       this.listcat=x;
-      console.log(x);
-    })
+       })
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventCategoriesPage');
+    this.loadUsersCategories();
   }
   search(event) {
     let term = event.target.value;
     if (term.trim() === '' || term.trim().length < 2) {
       this.listcat = this.orgcat;
     } else {
-      this.myprovider.getTagByName(term).subscribe(listcat => {
+      this._service.getCatByName(term).subscribe(listcat => {
         this.listcat = listcat;
         console.log(this.listcat);
       });
     }
   }
+  loadUsersCategories(){
+    this._service.loadUsersCategories().then(uscat=>{
+      this.p=uscat;
+      if(this.p.length==0){
+        this.p=['-1'];
+      }
+      this.p=uscat;
+    });
+  }
+  addCatToUser(cat){
+    this._service.addCatToUser(cat);
+  }
+    deleteCatFromUser(cat){
+    this._service.deleteCatFromUser(cat);
+  }
+
 
 }
