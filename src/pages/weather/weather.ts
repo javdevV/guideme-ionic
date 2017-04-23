@@ -23,7 +23,7 @@ export class WeatherPage {
     }
 
   ionViewDidLoad() {
-    
+    this.getDefaultCity();
     
   }
 
@@ -43,5 +43,31 @@ export class WeatherPage {
         // console.log(city.zmw);
 });
 }
+
+
+  getDefaultCity() {
+    this.storage.get('city').then((val) => {
+      if (val != null) {
+        this.zmw = val.zmw;
+        this.weatherService.getWeather(this.zmw)
+          .subscribe(res => {
+            this.weather = res.current_observation;
+            console.log(res);
+          });
+      } else {
+        this.zmw = '00000.149.60715';
+        this.weatherService.getWeather(this.zmw)
+          .subscribe(res => {
+            this.weather = res.current_observation;
+            console.log(res);
+            
+          });
+      }
+    })
+    
+  }
+}
+
+
 
 
