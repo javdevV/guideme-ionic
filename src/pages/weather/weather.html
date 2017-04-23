@@ -7,3 +7,66 @@
 </ion-header>
 
 
+<ion-content padding class="weather">
+  
+  <ion-grid *ngIf="weather">
+    <ion-row>
+      <ion-col col-12>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>City Name:</ion-label>
+            <ion-input (keyup)="getQuery()" [(ngModel)]="searchStr" type="text" value=""></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+          <ion-item *ngFor="let result of results">
+            <span (click) = "chooseCity(result)">{{ result.name }}</span>
+          </ion-item>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <h2 class="location">{{ weather.display_location.full }}</h2>
+      </ion-col>
+      <ion-col col-12>
+         <div class="tibo"><img src="{{ weather.icon_url }}"></div>
+      </ion-col>
+      <ion-col col-12>
+         <h3 class="desc">{{ weather.weather }}</h3>
+      </ion-col>
+      <ion-col col-12>
+         <h1 class="temp">{{ weather.temp_c }}&deg;</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-20>
+        <ion-list>
+          <ion-item>
+            <strong>Actual Temperature: </strong>{{ weather.temp_c}} Celsius
+          </ion-item>
+          <ion-item>
+            <strong>Humidity: </strong>{{ weather.relative_humidity}}
+          </ion-item>
+          <ion-item>
+            <strong>Feels like: </strong>{{ weather.feelslike_c}} Celsius
+          </ion-item>
+          <ion-item>
+            <strong>Wind Speed: </strong>{{ weather.wind_mph}} Km/h 💨
+          </ion-item>
+          <ion-item>
+            <strong>Wind: </strong>{{ weather.wind_string}}⚠️
+          </ion-item>
+             <ion-item>
+            <strong>Wind Direction: </strong>{{ weather.wind_dir}} 
+          </ion-item>
+          <ion-item>
+            <strong>Local Time: </strong>{{ weather.local_time_rfc822}}
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
