@@ -26,7 +26,8 @@ import { EventCategoriesPage } from '../pages/event-categories/event-categories'
 import { ProfilePage } from '../pages/profile/profile';
 import { EventsPage } from '../pages/events/events';
 import { WeatherPage } from '../pages//weather/weather';
-
+import { Weather } from './../providers/weather';
+import { IonicStorageModule } from '@ionic/storage';
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +45,8 @@ import { WeatherPage } from '../pages//weather/weather';
 
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
