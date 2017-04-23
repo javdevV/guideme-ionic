@@ -18,3 +18,14 @@ export class Weather {
     //https://nihongo.wunderground.com/weather/api/d/docs?d=autocomplete-api Documentation emta3 el autocomplete
     this.searchUrl = 'http://autocomplete.wunderground.com/aq?query=';
   }
+  
+//👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴
+// https://www.wunderground.com/cgi-bin/findweather/
+//J'ai droit qu'a 10 req par 60 sc  et 500 par jour  Autre que ça lezmna on paye :/ 
+//👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴
+
+  getWeather(zmw) {
+    return this._http.get(this.conditionsUrl+'/zmw:'+zmw+'.json')
+      .map(res => res.json());
+   
+  }
