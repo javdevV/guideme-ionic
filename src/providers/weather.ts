@@ -18,7 +18,6 @@ export class Weather {
     //https://nihongo.wunderground.com/weather/api/d/docs?d=autocomplete-api Documentation emta3 el autocomplete
     this.searchUrl = 'http://autocomplete.wunderground.com/aq?query=';
   }
-
 //👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴👴
 // https://www.wunderground.com/cgi-bin/findweather/
 //J'ai droit qu'a 10 req par 60 sc  et 500 par jour  Autre que ça lezmna on paye :/ 
@@ -29,16 +28,12 @@ export class Weather {
       .map(res => res.json());
    
   }
-
-  
 // haw pour mieux comprendre http://www.nws.noaa.gov/os/vtec/pdfs/VTEC_explanation6.pdf
-
-  getAlert(zmw){
+getAlert(zmw){
           return this._http.get(this.alertUrl+'/zmw:'+zmw+'.json')
       .map(res => res.json());
   }
-
-  searchCities(searchStr) {
+searchCities(searchStr) {
     return this._http.get(this.searchUrl+''+searchStr)
       .map(res => res.json());
   }

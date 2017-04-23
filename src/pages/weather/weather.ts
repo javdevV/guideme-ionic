@@ -21,3 +21,27 @@ export class WeatherPage {
     private storage: Storage) {
       
     }
+
+  ionViewDidLoad() {
+    
+    
+  }
+
+  getQuery() {
+    this.weatherService.searchCities(this.searchStr)
+      .subscribe(res => {
+        this.results = res.RESULTS;
+      });
+  }
+
+  chooseCity(city) {
+    this.results = [];
+    this.weatherService.getWeather(city.zmw)
+      .subscribe(res => {
+        this.weather = res.current_observation;
+     
+        // console.log(city.zmw);
+});
+}
+
+
