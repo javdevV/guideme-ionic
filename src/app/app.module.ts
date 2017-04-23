@@ -25,6 +25,9 @@ import { EventTagPage } from '../pages/event-tag/event-tag';
 import { EventCategoriesPage } from '../pages/event-categories/event-categories';
 import { ProfilePage } from '../pages/profile/profile';
 import { EventsPage } from '../pages/events/events';
+import { WeatherPage } from '../pages//weather/weather';
+import { Weather } from './../providers/weather';
+import { IonicStorageModule } from '@ionic/storage';
 @NgModule({
   declarations: [
     MyApp,
@@ -37,11 +40,13 @@ import { EventsPage } from '../pages/events/events';
     BeaconsPage,
     ReviewPage,
     AddReviewPage,
+       WeatherPage,
       EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage
 
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,6 +55,7 @@ import { EventsPage } from '../pages/events/events';
     ChatPage,
     MapPage,
     ListPage,
+       WeatherPage,
     DetailPage,
     BeaconsPage,
      ReviewPage,
@@ -57,7 +63,7 @@ import { EventsPage } from '../pages/events/events';
      ListePage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage
 
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Todos,BeaconProvider,Locations,GoogleMaps, Connectivity,Reviews,
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Todos,BeaconProvider,Locations,GoogleMaps,Weather, Connectivity,Reviews,
    Myprovider,Catprovider,Geolocation,Event]
 })
 export class AppModule {}

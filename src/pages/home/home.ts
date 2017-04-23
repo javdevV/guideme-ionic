@@ -9,6 +9,7 @@ import { EventTagPage } from '../event-tag/event-tag';
 import { EventCategoriesPage } from '../event-categories/event-categories';
 import { ProfilePage } from '../profile/profile';
 import { EventsPage } from '../events/events';
+import { WeatherPage } from '../weather/weather';
 @Component({
     selector: 'page-home',
     templateUrl: 'home.html'
@@ -21,9 +22,10 @@ export class HomePage {
     tab4Root: any = ChatPage;
     tab5Root: any = ReviewPage;
 tab6Root: any = ListePage;
-tab7Root: any = EventTagPage;
-tab8Root: any = EventCategoriesPage;
-tab9Root: any = ProfilePage;
+tab11Root: any = WeatherPage;
+// tab7Root: any = EventTagPage;
+// tab8Root: any = EventCategoriesPage;
+// tab9Root: any = ProfilePage;
 tab10Root: any = EventsPage;
     constructor(){
 
