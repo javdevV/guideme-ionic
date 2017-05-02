@@ -25,8 +25,7 @@ tab6Root: any = ListePage;
 tab11Root: any = WeatherPage;
 // tab7Root: any = EventTagPage;
 // tab8Root: any = EventCategoriesPage;
-// tab9Root: any = ProfilePage;
-tab10Root: any = EventsPage;
+ tab9Root: any = ProfilePage;
     constructor(){
 
     }
