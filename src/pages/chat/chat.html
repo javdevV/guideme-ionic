@@ -1,11 +1,42 @@
-<ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let message of chats">{{message}}</ion-item>
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content #content padding class="chatPage">
+   <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list no-lines>
+    <ion-item *ngFor="let msg of messages" >
+      <chat-bubble [message]="msg"></chat-bubble>
+    </ion-item>
   </ion-list>
 
-  <ion-item>
-    <ion-input type="text" [(ngModel)]="chat_input" placeholder="Enter message"></ion-input>
-  </ion-item>
-
-  <button ion-button block (click)="send(chat_input)">Send</button>
 </ion-content>
+
+<ion-footer class="chatPageFooter">
+  <ion-toolbar>
+
+    <ion-item>
+      <ion-label style="margin:0px;"></ion-label>
+      <div item-content style="width:100%;">
+        <elastic-textarea #txtChat placeholder="Type to compose" lineHeight="22"></elastic-textarea>
+      </div>
+    </ion-item>
+
+    <ion-buttons right>
+      <button ion-button icon-only style="min-width:45px;" (click)="sendMessage()">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

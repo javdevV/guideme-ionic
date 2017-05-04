@@ -27,9 +27,19 @@ import { ProfilePage } from '../pages/profile/profile';
 import { EventsPage } from '../pages/events/events';
 import { WeatherPage } from '../pages//weather/weather';
 import { Weather } from './../providers/weather';
+
 import { InterestsPage } from '../pages/interests/interests';
 import { Interests } from './../providers/interests';
+
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
+
 import { IonicStorageModule } from '@ionic/storage';
+import { AuthService } from './../providers/auth-service';
+import { SlidePage } from '../pages/slide/slide';
+import {ChatBubble} from '../components/chatBubble/chatBubble';
+import {ElasticTextarea} from '../components/elasticTextarea';
+import { Chats } from '../providers/chats';
 @NgModule({
   declarations: [
     MyApp,
@@ -43,7 +53,10 @@ import { IonicStorageModule } from '@ionic/storage';
     ReviewPage,
     AddReviewPage,
        WeatherPage,
-      EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage,InterestsPage
+      EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage,
+      LoginPage,RegisterPage,SlidePage,ChatBubble,
+      ElasticTextarea,InterestsPage
+
 
   ],
   imports: [
@@ -62,10 +75,11 @@ import { IonicStorageModule } from '@ionic/storage';
     BeaconsPage,
      ReviewPage,
     AddReviewPage,
-     ListePage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage,InterestsPage
-
+     ListePage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage,LoginPage,RegisterPage,
+     SlidePage,InterestsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Todos,BeaconProvider,Locations,GoogleMaps,Weather, Connectivity,Reviews,
-   Myprovider,Catprovider,Geolocation,Event,Interests]
+   Myprovider,Catprovider,Geolocation,Event,AuthService,Chats,Interests]
+
 })
 export class AppModule {}

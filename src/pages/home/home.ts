@@ -10,11 +10,14 @@ import { EventCategoriesPage } from '../event-categories/event-categories';
 import { ProfilePage } from '../profile/profile';
 import { EventsPage } from '../events/events';
 import { WeatherPage } from '../weather/weather';
+import { AuthService } from '../../providers/auth-service';
+import { NavController } from 'ionic-angular';
 @Component({
     selector: 'page-home',
     templateUrl: 'home.html'
 })
 export class HomePage {
+	
     tab1Root: any = BeaconsPage;
 
     tab2Root: any = MapPage;
@@ -26,8 +29,15 @@ tab11Root: any = WeatherPage;
 // tab7Root: any = EventTagPage;
 // tab8Root: any = EventCategoriesPage;
  tab9Root: any = ProfilePage;
-    constructor(){
 
+    constructor(){
+   
     }
+
+ 
+
+
+
+
 
 }

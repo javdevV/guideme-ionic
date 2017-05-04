@@ -11,6 +11,8 @@ import {ChatPage} from '../chat/chat';
 import { MapPage } from '../map/map';
 import { ListPage } from '../list/list';
 import { DetailPage } from '../detail/detail';
+import { LoginPage } from '../login/login';
+import { AuthService } from '../../providers/auth-service';
 @Component({
   selector: 'page-beacons',
   templateUrl: 'beacons.html'
@@ -21,13 +23,15 @@ import { DetailPage } from '../detail/detail';
 
 
 export class BeaconsPage {
+   username = '';
+  email = '';
 tab1Root:any=ListPage;
 tab2Root:any=MapPage;
   todos: any;
 beacons: BeaconModel[] = [];
 zone: any;
 num:any;
-  constructor(public navCtrl: NavController, public todoService: Todos, public alertCtrl: AlertController,public platform: Platform,public beaconProvider: BeaconProvider, public events: Events) {
+  constructor(public navCtrl: NavController, public todoService: Todos, public alertCtrl: AlertController,public platform: Platform,public beaconProvider: BeaconProvider, public events: Events,private auth: AuthService) {
   this.zone = new NgZone({ enableLongStackTrace: false });
   this.num=Math.floor(Math.random()*(16-1+1)+1);
   LocalNotifications.on("click", (notification, state) => {
@@ -51,7 +55,9 @@ num:any;
               alert.present()
           });
 
-
+let info = this.auth.getUserInfo();
+    this.username = info['name'];
+    this.email = info['email'];
 
 
  
@@ -113,7 +119,13 @@ this.navCtrl.push(MapPage) ;
 
 
 
+public logout() {
+    this.auth.logout().subscribe(succ => {
+      this.navCtrl.setRoot(LoginPage)
 
+
+    });
+}
 
 
 
