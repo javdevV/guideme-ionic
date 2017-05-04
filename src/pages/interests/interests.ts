@@ -13,13 +13,13 @@ Ionic pages and navigation.
 })
 export class InterestsPage {
 
-
-	checkboxFields: string[]=["sourour","dali"];
-	filters: any;
+	//checkboxFields: string[]=["sourour","dali"];
+	//filters: any;
 	ints:any;
 	userints:any;
 	shown :boolean =false;
 	pos:number;
+
 	constructor(public navCtrl: NavController, public navParams: NavParams,private myprovider: Interests) {
 
 		//this.checkboxFields.forEach((field) => this.filters = false );
@@ -45,47 +45,47 @@ export class InterestsPage {
 		});
 	}
 	isChecked(int):boolean{
-/*console.log('cheking');
-console.log(this.shown);*/
+	/*console.log('cheking');
+	console.log(this.shown);*/
 
 
-if(this.shown==true){
-  this.pos =this.userints.find(it=>it.label==int.label);
-  //console.log(this.userints[this.pos]);
-  if(!this.pos){
+	if(this.shown==true){
+		this.pos =this.userints.find(it=>it.label==int.label);
+	//console.log(this.userints[this.pos]);
+	if(!this.pos){
 
-    return false;
-  }
-  else{
-    //console.log(this.userints[this.pos].label);
-    return true;
-  }
+		return false;
+	}
+	else{
+		//console.log(this.userints[this.pos].label);
+		return true;
+	}
 }
 
 }
 saveUserInts(event,int){
-  console.log("save fct");
-  console.log("ckecked : "+int.checked);
-  
-  if(int.checked==true){
-    this.pos =this.userints.findIndex(it=>it.label==int.label);
-  console.log(this.pos);
-    if(this.pos==-1){
-      this.userints.push(int);
-      console.log(int);
-      this.myprovider.addIntrToUser(int);
+	console.log("save fct");
+	console.log("ckecked : "+int.checked);
+	console.log("userints "+this.userints);
+	if(int.checked==true){
+		this.pos =this.userints.findIndex(it=>it.label==int.label);
+		console.log("pos "+this.pos);
+		if(this.pos==-1){
+			console.log(int);
+			this.myprovider.addIntrToUser(int);
+			this.userints.push(int);
 
-    }
-  }	
-  else if(int.checked==false){
-    this.pos =this.userints.findIndex(it=>it.label==int.label);
-    console.log("pos "+this.pos);
-    if(this.pos>-1){
-      console.log(this.userints[this.pos].label);
-      this.userints.splice(this.pos,1);
-      this.myprovider.deleteIntrFromUser(int);
-    }
-  }  
+		}
+	}	
+	else if(int.checked==false){
+		this.pos =this.userints.findIndex(it=>it.label==int.label);
+		console.log("pos "+this.pos);
+		if(this.pos > -1){
+			console.log(this.userints[this.pos]);
+			this.myprovider.deleteIntrFromUser({"label":int.label});
+			this.userints.splice(this.pos,1);
+		}
+	}  
 }
 
 }

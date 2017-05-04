@@ -49,8 +49,12 @@ loadInterests() {
   }
 
   addIntrToUser(tag){
+     console.log("fct add int");
        let headers = new Headers ();
       headers.append('content-Type','application/json');
+      headers.append("Access-Control-Allow-Origin", "*");
+      headers.append("Access-Control-Allow-Methods", "PUT");
+      headers.append("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
       this.http.put('http://localhost:9000/api/addInterestToUser', (tag), {headers: headers})
         .subscribe(res => {
           console.log(res.json());
@@ -62,7 +66,7 @@ loadInterests() {
      // let options ={p:JSON.stringify(tag),headers:headers};
      headers.append('content-Type','application/json');
      console.log("fct delete int");
-    this.http.delete(`http://localhost:9000/api/deleteInterestfromUser`,tag)
+    this.http.put(`http://localhost:9000/api/deleteInterestfromUser`,tag,{headers: headers})
       .subscribe(res => {
         console.log(res.json());
       });
