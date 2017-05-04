@@ -13,16 +13,23 @@
 </ion-header>
 
 <ion-content class="home" padding>
- 
+   <!-- <ion-buttons end>
+      <button ion-button (click)="logout()">
+        <ion-icon name="log-out"></ion-icon> -->
 
+ <strong>Welcome {{username}}!</strong>
+  
 
-
-
+<ion-buttons end>
+      <button ion-button (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
    
     
   <ion-list no-lines>
 
-  <img src="https://www.spreadshirt.fr/image-server/v1/designs/15541607,width=178,height=178/ici-c-est-paris.png" style="margin-left: 150px;margin-top:180px">
+  <img src="https://www.spreadshirt.fr/image-server/v1/designs/15541607,width=178,height=178/ici-c-est-paris.png" style="margin-top:140px">
 <!-- <button primary (click)="schedule()">Schedule</button> -->
 
        <!-- <ion-item-sliding  *ngFor="let todo of todos">

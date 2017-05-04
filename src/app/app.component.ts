@@ -13,12 +13,15 @@ import { EventTagPage } from '../pages/event-tag/event-tag';
 import { EventCategoriesPage } from '../pages/event-categories/event-categories';
 import { ProfilePage } from '../pages/profile/profile';
 import { EventsPage } from '../pages/events/events';
-
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
+import { SlidePage } from '../pages/slide/slide';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = HomePage;
+   rootPage = LoginPage;
+  //rootPage:any = 'LoginPage';
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
