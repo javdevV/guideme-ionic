@@ -27,6 +27,8 @@ import { ProfilePage } from '../pages/profile/profile';
 import { EventsPage } from '../pages/events/events';
 import { WeatherPage } from '../pages//weather/weather';
 import { Weather } from './../providers/weather';
+import { InterestsPage } from '../pages/interests/interests';
+import { Interests } from './../providers/interests';
 import { IonicStorageModule } from '@ionic/storage';
 @NgModule({
   declarations: [
@@ -41,7 +43,7 @@ import { IonicStorageModule } from '@ionic/storage';
     ReviewPage,
     AddReviewPage,
        WeatherPage,
-      EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage
+      EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage,InterestsPage
 
   ],
   imports: [
@@ -60,10 +62,10 @@ import { IonicStorageModule } from '@ionic/storage';
     BeaconsPage,
      ReviewPage,
     AddReviewPage,
-     ListePage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage
+     ListePage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage,InterestsPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Todos,BeaconProvider,Locations,GoogleMaps,Weather, Connectivity,Reviews,
-   Myprovider,Catprovider,Geolocation,Event]
+   Myprovider,Catprovider,Geolocation,Event,Interests]
 })
 export class AppModule {}

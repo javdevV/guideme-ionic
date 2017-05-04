@@ -1,39 +1,63 @@
 <!--
-  Generated template for the Profile page.
+Generated template for the Profile page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
+See http://ionicframework.com/docs/v2/components/#navigation for more info on
+Ionic pages and navigation.
 -->
 <ion-header >
-    <ion-toolbar>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-      <ion-title>Profile </ion-title>
-  </ion-navbar>
-    </ion-toolbar>
+  <ion-toolbar>
+<ion-navbar>
+  <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+    <ion-title>Profile </ion-title>
+</ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 
-<ion-content padding>
-  <ion-card>
-    <ion-card-header style="background-color: #CFD8DC; color: black;">
-      Events
-    </ion-card-header>
-    <ion-card-content>
-      If you are interested on events complete configure your profile by choosing events tags and categories <br/>
-      <ion-list>
-        <ion-item>
-            <button ion-button (click)="goToTag()">Manage Tags</button>
-        </ion-item>
-        <ion-item>
-          <button ion-button (click)="goToCat()">Manage Categories</button>
-        </ion-item>
-        <ion-item>
-          <button ion-button (click)="goToEvent()">My Events</button>
-        </ion-item>
-      </ion-list>
-    </ion-card-content>
-  </ion-card>
+<ion-content padding  class="cards-bg">
+<div>
+<ion-card>
+
+
+<ion-card-content>
+ <ion-card-title style="background-color: #CFD8DC; color: red;">
+    Interests
+</ion-card-title>
+To get more specific Notifications related to what you are intrested in , complete your profile by checking your interests  
+  <ion-row>
+  <ion-col>
+    <button ion-button (click)="goToInterests()"> my Interests</button>
+  </ion-col>
+
+  </ion-row>
+</ion-card-content>
+
+</ion-card>
+
+<br>
+
+
+<ion-card>
+  
+  <ion-card-content>
+  <ion-card-title style="background-color: #CFD8DC; color: red;">
+    Events
+  </ion-card-title>
+    If you are interested on events complete configure your profile by choosing events tags and categories <br/>
+    <ion-row>
+      <ion-col>
+          <button ion-button (click)="goToTag()"> Tags</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToCat()"> Categories</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToEvent()">My Events</button>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+</div>
 </ion-content>
