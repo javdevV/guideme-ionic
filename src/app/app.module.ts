@@ -27,8 +27,13 @@ import { ProfilePage } from '../pages/profile/profile';
 import { EventsPage } from '../pages/events/events';
 import { WeatherPage } from '../pages//weather/weather';
 import { Weather } from './../providers/weather';
+
+import { InterestsPage } from '../pages/interests/interests';
+import { Interests } from './../providers/interests';
+
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+
 import { IonicStorageModule } from '@ionic/storage';
 import { AuthService } from './../providers/auth-service';
 import { SlidePage } from '../pages/slide/slide';
@@ -50,7 +55,8 @@ import { Chats } from '../providers/chats';
        WeatherPage,
       EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage,
       LoginPage,RegisterPage,SlidePage,ChatBubble,
-      ElasticTextarea
+      ElasticTextarea,InterestsPage
+
 
   ],
   imports: [
@@ -70,10 +76,10 @@ import { Chats } from '../providers/chats';
      ReviewPage,
     AddReviewPage,
      ListePage,EventTagPage,EventCategoriesPage,ProfilePage,EventsPage,LoginPage,RegisterPage,
-     SlidePage
-
+     SlidePage,InterestsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Todos,BeaconProvider,Locations,GoogleMaps,Weather, Connectivity,Reviews,
-   Myprovider,Catprovider,Geolocation,Event,AuthService,Chats]
+   Myprovider,Catprovider,Geolocation,Event,AuthService,Chats,Interests]
+
 })
 export class AppModule {}

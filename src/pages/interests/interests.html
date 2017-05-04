@@ -1,0 +1,27 @@
+<!--
+  Generated template for the Interests page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Interests</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  padding>
+<br>
+
+<ion-list [hidden]="!shown"   >
+
+<ion-item    *ngFor="let int of ints">
+  <ion-label>{{int.label}}</ion-label>
+  <ion-checkbox  [checked]="isChecked(int)" [(ngModel)]="int.checked" item-left color="secondary" (click)="saveUserInts($event,int)" ></ion-checkbox >
+</ion-item>
+</ion-list>
+
+</ion-content>
