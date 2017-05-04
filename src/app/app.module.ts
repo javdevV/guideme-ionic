@@ -32,6 +32,9 @@ import { RegisterPage } from '../pages/register/register';
 import { IonicStorageModule } from '@ionic/storage';
 import { AuthService } from './../providers/auth-service';
 import { SlidePage } from '../pages/slide/slide';
+import {ChatBubble} from '../components/chatBubble/chatBubble';
+import {ElasticTextarea} from '../components/elasticTextarea';
+import { Chats } from '../providers/chats';
 @NgModule({
   declarations: [
     MyApp,
@@ -46,7 +49,8 @@ import { SlidePage } from '../pages/slide/slide';
     AddReviewPage,
        WeatherPage,
       EventTagPage ,EventCategoriesPage,ProfilePage,EventsPage,
-      LoginPage,RegisterPage,SlidePage
+      LoginPage,RegisterPage,SlidePage,ChatBubble,
+      ElasticTextarea
 
   ],
   imports: [
@@ -70,6 +74,6 @@ import { SlidePage } from '../pages/slide/slide';
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Todos,BeaconProvider,Locations,GoogleMaps,Weather, Connectivity,Reviews,
-   Myprovider,Catprovider,Geolocation,Event,AuthService]
+   Myprovider,Catprovider,Geolocation,Event,AuthService,Chats]
 })
 export class AppModule {}
