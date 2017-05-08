@@ -35,10 +35,8 @@
          <div class="tibo"><img src="{{ weather.icon_url }}"></div>
       </ion-col>
       <ion-col col-12>
-         <h3 class="desc">{{ weather.weather }}</h3>
-      </ion-col>
-      <ion-col col-12>
-         <h1 class="temp">{{ weather.temp_c }}&deg;</h1>
+         <h3 class="temp"> {{ weather.weather }} {{ weather.temp_c }}&deg;</h3>
+          <h5 class="desc"></h5>
       </ion-col>
     </ion-row>
     <ion-row>
